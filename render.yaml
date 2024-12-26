@@ -1,0 +1,11 @@
+services:
+  - name: my-web-app
+    type: web
+    env: node
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
