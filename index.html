@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Management</h1>
+
+    <!-- Add User Form -->
+    <form id="add-user-form" class="form">
+      <input type="text" name="name" placeholder="Enter user name" required>
+      <button type="submit" class="add-btn">Add User</button>
+    </form>
+
+    <!-- Find User Form -->
+    <form id="find-user-form" class="form">
+      <input type="text" name="query" placeholder="Enter user ID or keyword" required>
+      <button type="submit" class="find-btn">Find User</button>
+    </form>
+
+    <!-- Sort Users Button -->
+    <button id="sort-users-btn" class="sort-btn">Sort Users</button>
+
+    <!-- Output Users -->
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
